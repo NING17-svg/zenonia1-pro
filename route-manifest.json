@@ -1,0 +1,232 @@
+[
+  {
+    "id": "home",
+    "translationKey": "home",
+    "locale": "en-US",
+    "routeKind": "home",
+    "url": "/",
+    "alternates": {
+      "en-US": "/"
+    }
+  },
+  {
+    "id": "about",
+    "translationKey": "about",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/__about_fixture",
+    "alternates": {
+      "en-US": "/__about_fixture"
+    }
+  },
+  {
+    "id": "wiki",
+    "translationKey": "wiki",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/__wiki_fixture",
+    "alternates": {
+      "en-US": "/__wiki_fixture"
+    }
+  },
+  {
+    "id": "achievements",
+    "translationKey": "achievements",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/achievements",
+    "alternates": {
+      "en-US": "/achievements"
+    }
+  },
+  {
+    "id": "beginner-guide",
+    "translationKey": "beginner-guide",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/beginner-guide",
+    "alternates": {
+      "en-US": "/beginner-guide"
+    }
+  },
+  {
+    "id": "entity-family-classes-en-us",
+    "translationKey": "entity-family:classes:hub",
+    "locale": "en-US",
+    "routeKind": "entity-hub",
+    "url": "/classes",
+    "alternates": {
+      "en-US": "/classes"
+    }
+  },
+  {
+    "id": "entity-classes-assassin-en-us",
+    "translationKey": "entity:classes:assassin",
+    "locale": "en-US",
+    "routeKind": "entity-detail",
+    "url": "/classes/assassin",
+    "alternates": {
+      "en-US": "/classes/assassin"
+    }
+  },
+  {
+    "id": "entity-classes-paladin-en-us",
+    "translationKey": "entity:classes:paladin",
+    "locale": "en-US",
+    "routeKind": "entity-detail",
+    "url": "/classes/paladin",
+    "alternates": {
+      "en-US": "/classes/paladin"
+    }
+  },
+  {
+    "id": "entity-classes-warrior-en-us",
+    "translationKey": "entity:classes:warrior",
+    "locale": "en-US",
+    "routeKind": "entity-detail",
+    "url": "/classes/warrior",
+    "alternates": {
+      "en-US": "/classes/warrior"
+    }
+  },
+  {
+    "id": "steam-demo",
+    "translationKey": "steam-demo",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/demo",
+    "alternates": {
+      "en-US": "/demo"
+    }
+  },
+  {
+    "id": "faq",
+    "translationKey": "faq",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/faq",
+    "alternates": {
+      "en-US": "/faq"
+    }
+  },
+  {
+    "id": "final-boss",
+    "translationKey": "final-boss",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/final-boss",
+    "alternates": {
+      "en-US": "/final-boss"
+    }
+  },
+  {
+    "id": "good-evil-paths",
+    "translationKey": "good-evil-paths",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/good-evil-paths",
+    "alternates": {
+      "en-US": "/good-evil-paths"
+    }
+  },
+  {
+    "id": "guides",
+    "translationKey": "guides",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides",
+    "alternates": {
+      "en-US": "/guides"
+    }
+  },
+  {
+    "id": "game-length",
+    "translationKey": "game-length",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/how-long-to-beat",
+    "alternates": {
+      "en-US": "/how-long-to-beat"
+    }
+  },
+  {
+    "id": "is-it-worth-playing",
+    "translationKey": "is-it-worth-playing",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/is-it-worth-playing",
+    "alternates": {
+      "en-US": "/is-it-worth-playing"
+    }
+  },
+  {
+    "id": "release-date",
+    "translationKey": "release-date",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/release-date",
+    "alternates": {
+      "en-US": "/release-date"
+    }
+  },
+  {
+    "id": "remaster-vs-original",
+    "translationKey": "remaster-vs-original",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/remaster-vs-original",
+    "alternates": {
+      "en-US": "/remaster-vs-original"
+    }
+  },
+  {
+    "id": "stats-and-growth",
+    "translationKey": "stats-and-growth",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/stats",
+    "alternates": {
+      "en-US": "/stats"
+    }
+  },
+  {
+    "id": "switch-and-mobile-ports",
+    "translationKey": "switch-and-mobile-ports",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/switch-release",
+    "alternates": {
+      "en-US": "/switch-release"
+    }
+  },
+  {
+    "id": "system-requirements",
+    "translationKey": "system-requirements",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/system-requirements",
+    "alternates": {
+      "en-US": "/system-requirements"
+    }
+  },
+  {
+    "id": "walkthrough",
+    "translationKey": "walkthrough",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/walkthrough",
+    "alternates": {
+      "en-US": "/walkthrough"
+    }
+  },
+  {
+    "id": "series-and-remaster-plans",
+    "translationKey": "series-and-remaster-plans",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/zenonia-series-order",
+    "alternates": {
+      "en-US": "/zenonia-series-order"
+    }
+  }
+]

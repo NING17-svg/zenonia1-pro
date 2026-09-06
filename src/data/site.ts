@@ -24,14 +24,14 @@ export interface SiteConfig {
 }
 
 export const site: SiteConfig = {
-  name: "Template Game Guide",
-  brandMark: "GG",
-  gameName: "Template Game",
-  domain: "example.com",
-  baseUrl: (process.env.NEXT_PUBLIC_SITE_URL || "https://example.com").replace(/\/$/, ""),
+  name: "ZENONIA 1 Guide",
+  brandMark: "Z1",
+  gameName: "ZENONIA 1",
+  domain: "zenonia1.pro",
+  baseUrl: (process.env.NEXT_PUBLIC_SITE_URL || "https://zenonia1.pro").replace(/\/$/, ""),
   description:
-    "A neutral game guide hub template for launch pages, wiki notes, guides, release information, and FAQs.",
-  tagline: "Guides, wiki notes, release info, and launch FAQs in one clean hub.",
+    "Unofficial guide hub for the 2026-08-31 Steam release of ZENONIA 1: release, classes, demo, beginner walkthrough, stats, endings, and the remaster-vs-original comparison.",
+  tagline: "Release, classes, walkthrough, and remaster comparison for the 2026 Steam build of ZENONIA 1.",
   primaryLocale: "en-US",
   locales: [
     {
@@ -53,16 +53,26 @@ export const site: SiteConfig = {
       },
     },
   ],
-  author: "Template Game Guide",
+  author: "ZENONIA 1 Guide",
   gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "",
   bingSiteAuthCode: process.env.NEXT_PUBLIC_BING_SITE_AUTH_CODE || "",
   officialSources: [
     {
-      label: "Official website",
-      href: "https://example.com",
-      description: "Replace this with the game publisher or developer website.",
+      label: "ZENONIA 1 on Steam",
+      href: "https://store.steampowered.com/app/4538960/ZENONIA_1/",
+      description: "Official Steam store page for the 2026-08-31 release.",
+    },
+    {
+      label: "ZENONIA Demo on Steam",
+      href: "https://store.steampowered.com/app/4733680/ZENONIA_Demo/",
+      description: "Official Demo store page.",
+    },
+    {
+      label: "Official ZENONIA X account",
+      href: "https://x.com/Zenonia_C2H",
+      description: "Publisher channel for the Switch development update.",
     },
   ],
   disclaimer:
-    "This is an unofficial fan guide template. Replace placeholder facts with official sources before launch.",
+    "This is an unofficial fan guide. Facts are sourced from the official Steam store page, the official Demo store page, official Steam announcements, and the official ZENONIA X account.",
 };
