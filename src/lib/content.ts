@@ -7,7 +7,7 @@ import { faqPage } from "@/data/pages-generated/faq-page";
 import {
   aboutFixturePage,
   wikiFixturePage,
-} from "@/data/pages-generated/template-fixture-pages";
+} from "../../scripts/internal-fixtures/template-fixture-pages";
 import { buildEntityPages } from "@/lib/entities";
 import { normalizePath } from "@/lib/localization";
 
