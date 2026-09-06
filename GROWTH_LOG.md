@@ -6,6 +6,14 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-06 - Adsterra fixed six-unit ad codes wired
+
+- Task: Replace empty Adsterra placeholders in `src/data/ads.ts` with the fixed six-unit codes created for `zenonia1.pro` (Native Banner, 728x90, 468x60, 320x50, 160x600, Smartlink).
+- Files changed: `src/data/ads.ts`.
+- URLs affected: None.
+- Ad baseline: All six ad units now hold real Adsterra code or the Smartlink HTTPS URL; the page DOM container continues to execute the Adsterra script markup.
+- Verification: `npm run verify` (typecheck, lint, template/content/SEO validation, static export, rendered-SEO validator) passed.
+
 ### 2026-08-12 - Static discovery and review freshness baseline added
 
 - Task: Add locale-aware static search, automatic recent updates, visible review dates, and browser metadata/security defaults to the shared template.
