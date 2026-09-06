@@ -1,0 +1,46 @@
+import type { ThemeConfig } from "@/types/theme";
+
+export const theme = {
+  mode: "light",
+  tokens: {
+    pageBg: "#f5f6f1",
+    surface1: "#ffffff",
+    surface2: "#eef2ed",
+    surface3: "#e4e9e3",
+    surfaceInverse: "#18201d",
+    textPrimary: "#18201d",
+    textMuted: "#5d6862",
+    textInverse: "#ffffff",
+    textOnAccentPrimary: "#ffffff",
+    textLink: "#2f6f5e",
+    focusRing: "#2f6f5e",
+    line: "#d8ded7",
+    lineStrong: "#7d8982",
+    accentPrimary: "#2f6f5e",
+    accentSecondary: "#b85c38",
+    accentBright: "#c49a35",
+    statusConfirmed: "#2f6f5e",
+    statusCaution: "#9b651f",
+    statusUnknown: "#69736e",
+  },
+  typography: {
+    headingFamily: "Inter, ui-sans-serif, system-ui, sans-serif",
+    bodyFamily: "Inter, ui-sans-serif, system-ui, sans-serif",
+    headingWeight: 800,
+  },
+  shape: {
+    radius: "8px",
+    borderWidth: "1px",
+    shadow: "0 18px 50px rgba(24, 32, 29, 0.08)",
+    hoverLift: "-2px",
+  },
+  density: "comfortable",
+  background: { mode: "solid", overlay: 0, position: "center" },
+  variants: {
+    home: "split-panel",
+    hub: "card-grid",
+    content: "reading-right-rail",
+    workspace: "full-width",
+  },
+  decoration: { motif: "none", intensity: "low" },
+} satisfies ThemeConfig;

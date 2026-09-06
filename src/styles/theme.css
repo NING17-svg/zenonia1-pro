@@ -1,0 +1,155 @@
+:root {
+  --page-bg: #f5f6f1;
+  --surface-1: #ffffff;
+  --surface-2: #eef2ed;
+  --surface-3: #e4e9e3;
+  --surface-inverse: #18201d;
+  --text-primary: #18201d;
+  --text-muted: #5d6862;
+  --text-inverse: #ffffff;
+  --text-on-accent-primary: #ffffff;
+  --text-link: #2f6f5e;
+  --focus-ring: #2f6f5e;
+  --line: #d8ded7;
+  --line-strong: #7d8982;
+  --accent-primary: #2f6f5e;
+  --accent-secondary: #b85c38;
+  --accent-bright: #c49a35;
+  --status-confirmed: #2f6f5e;
+  --status-caution: #9b651f;
+  --status-unknown: #69736e;
+  --font-heading: Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-body: Inter, ui-sans-serif, system-ui, sans-serif;
+  --heading-weight: 800;
+  --border-width: 1px;
+  --radius: 8px;
+  --shadow: 0 18px 50px rgba(24, 32, 29, 0.08);
+  --hover-lift: -2px;
+  --max-width: 1180px;
+}
+
+.site-theme {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  --motif-image: none;
+  --motif-size: auto;
+  --motif-opacity: 0;
+  background: var(--page-bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+.site-theme::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: var(--motif-image);
+  background-size: var(--motif-size);
+  opacity: var(--motif-opacity);
+  pointer-events: none;
+}
+
+.site-theme > * {
+  position: relative;
+  z-index: 1;
+}
+
+.site-theme h1,
+.site-theme h2,
+.site-theme h3,
+.site-theme .brand {
+  font-family: var(--font-heading);
+  font-weight: var(--heading-weight);
+}
+
+.site-theme :focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.theme-dark,
+.theme-mixed .surface-inverse {
+  color-scheme: dark;
+}
+
+.density-compact {
+  --section-gap: 24px;
+  --card-padding: 16px;
+}
+
+.density-comfortable {
+  --section-gap: 34px;
+  --card-padding: 22px;
+}
+
+.motif-low {
+  --motif-opacity: 0.55;
+}
+
+.motif-medium {
+  --motif-opacity: 1;
+}
+
+.motif-lines {
+  --motif-image: linear-gradient(
+    115deg,
+    transparent 0 72%,
+    color-mix(in srgb, var(--accent-primary) 16%, transparent) 72% 74%,
+    transparent 74%
+  );
+}
+
+.motif-dots {
+  --motif-image: radial-gradient(
+    color-mix(in srgb, var(--accent-primary) 18%, transparent) 1px,
+    transparent 1px
+  );
+  --motif-size: 22px 22px;
+}
+
+.motif-grid {
+  --motif-image:
+    linear-gradient(color-mix(in srgb, var(--line) 35%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--line) 35%, transparent) 1px, transparent 1px);
+  --motif-size: 32px 32px;
+}
+
+.motif-organic {
+  --motif-image: radial-gradient(
+    circle at 85% 8%,
+    color-mix(in srgb, var(--accent-primary) 22%, transparent),
+    transparent 32%
+  );
+}
+
+.background-gradient {
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--accent-primary) 18%, var(--page-bg)),
+      var(--page-bg)
+    );
+}
+
+.background-texture {
+  background:
+    radial-gradient(
+      circle at 85% 8%,
+      color-mix(in srgb, var(--accent-primary) 18%, transparent),
+      transparent 30%
+    ),
+    var(--page-bg);
+}
+
+.background-image {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, var(--background-overlay)),
+      rgba(0, 0, 0, var(--background-overlay))
+    ),
+    var(--background-image);
+  background-position: var(--background-position);
+  background-size: cover;
+}

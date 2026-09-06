@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "zenonia1-pro",
+  "compatibility_date": "2026-08-25",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  },
+  "vars": {
+    "NEXT_PUBLIC_SITE_URL": "https://zenonia1.pro",
+    "NEXT_PUBLIC_GA_MEASUREMENT_ID": "",
+    "NEXT_PUBLIC_BING_SITE_AUTH_CODE": ""
+  }
+}
