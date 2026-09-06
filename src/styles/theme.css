@@ -1,30 +1,32 @@
 :root {
-  --page-bg: #f5f6f1;
-  --surface-1: #ffffff;
-  --surface-2: #eef2ed;
-  --surface-3: #e4e9e3;
-  --surface-inverse: #18201d;
-  --text-primary: #18201d;
-  --text-muted: #5d6862;
-  --text-inverse: #ffffff;
-  --text-on-accent-primary: #ffffff;
-  --text-link: #2f6f5e;
-  --focus-ring: #2f6f5e;
-  --line: #d8ded7;
-  --line-strong: #7d8982;
-  --accent-primary: #2f6f5e;
-  --accent-secondary: #b85c38;
-  --accent-bright: #c49a35;
-  --status-confirmed: #2f6f5e;
-  --status-caution: #9b651f;
-  --status-unknown: #69736e;
-  --font-heading: Inter, ui-sans-serif, system-ui, sans-serif;
-  --font-body: Inter, ui-sans-serif, system-ui, sans-serif;
-  --heading-weight: 800;
+  --page-bg: #0e1424;
+  --surface-1: #161d2e;
+  --surface-2: #1f2738;
+  --surface-3: #2a3346;
+  --surface-inverse: #f3e8c8;
+  --text-primary: #f3ead2;
+  --text-muted: #a8a08a;
+  --text-inverse: #0e1424;
+  --text-on-accent-primary: #0e1424;
+  --text-link: #e7a552;
+  --focus-ring: #ffd066;
+  --line: #3a4358;
+  --line-strong: #5a6480;
+  --accent-primary: #c9863a;
+  --accent-secondary: #7a5fb0;
+  --accent-bright: #f0c46e;
+  --status-confirmed: #5fbf6a;
+  --status-caution: #e5b04a;
+  --status-unknown: #9aa0b4;
+  --font-heading: 'Press Start 2P', 'Silkscreen', 'Inter', system-ui, -apple-system,
+    'Segoe UI', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial,
+    sans-serif;
+  --heading-weight: 700;
   --border-width: 1px;
-  --radius: 8px;
-  --shadow: 0 18px 50px rgba(24, 32, 29, 0.08);
-  --hover-lift: -2px;
+  --radius: 6px;
+  --shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+  --hover-lift: -1px;
   --max-width: 1180px;
 }
 
@@ -35,7 +37,8 @@
   --motif-image: none;
   --motif-size: auto;
   --motif-opacity: 0;
-  background: var(--page-bg);
+  background:
+    linear-gradient(180deg, var(--page-bg) 0%, #070b16 100%);
   color: var(--text-primary);
   font-family: var(--font-body);
 }
@@ -62,11 +65,12 @@
 .site-theme .brand {
   font-family: var(--font-heading);
   font-weight: var(--heading-weight);
+  letter-spacing: 0.01em;
 }
 
 .site-theme :focus-visible {
-  outline: 3px solid var(--focus-ring);
-  outline-offset: 3px;
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
 }
 
 .theme-dark,
@@ -85,71 +89,28 @@
 }
 
 .motif-low {
-  --motif-opacity: 0.55;
+  --motif-opacity: 0.18;
 }
 
 .motif-medium {
-  --motif-opacity: 1;
-}
-
-.motif-lines {
-  --motif-image: linear-gradient(
-    115deg,
-    transparent 0 72%,
-    color-mix(in srgb, var(--accent-primary) 16%, transparent) 72% 74%,
-    transparent 74%
-  );
-}
-
-.motif-dots {
-  --motif-image: radial-gradient(
-    color-mix(in srgb, var(--accent-primary) 18%, transparent) 1px,
-    transparent 1px
-  );
-  --motif-size: 22px 22px;
+  --motif-opacity: 0.5;
 }
 
 .motif-grid {
   --motif-image:
-    linear-gradient(color-mix(in srgb, var(--line) 35%, transparent) 1px, transparent 1px),
-    linear-gradient(90deg, color-mix(in srgb, var(--line) 35%, transparent) 1px, transparent 1px);
-  --motif-size: 32px 32px;
-}
-
-.motif-organic {
-  --motif-image: radial-gradient(
-    circle at 85% 8%,
-    color-mix(in srgb, var(--accent-primary) 22%, transparent),
-    transparent 32%
-  );
+    linear-gradient(
+      color-mix(in srgb, var(--line) 60%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--line) 60%, transparent) 1px,
+      transparent 1px
+    );
+  --motif-size: 28px 28px;
 }
 
 .background-gradient {
   background:
-    linear-gradient(
-      135deg,
-      color-mix(in srgb, var(--accent-primary) 18%, var(--page-bg)),
-      var(--page-bg)
-    );
-}
-
-.background-texture {
-  background:
-    radial-gradient(
-      circle at 85% 8%,
-      color-mix(in srgb, var(--accent-primary) 18%, transparent),
-      transparent 30%
-    ),
-    var(--page-bg);
-}
-
-.background-image {
-  background-image:
-    linear-gradient(
-      rgba(0, 0, 0, var(--background-overlay)),
-      rgba(0, 0, 0, var(--background-overlay))
-    ),
-    var(--background-image);
-  background-position: var(--background-position);
-  background-size: cover;
+    linear-gradient(180deg, var(--page-bg) 0%, #070b16 100%);
 }
