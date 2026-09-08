@@ -6,6 +6,14 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-07 - Achievements full list, walkthrough chapters, per-class builds
+
+- Task: Replace the category-only achievements page with the full 44-achievement list (name, description, global unlock %, location / ending gate); rewrite the walkthrough with five named chapters (Ayles, Adonis Forest faction choice, Five Holy Seals, Leo Kingdom, Ladon's Stronghold); layer per-class stat allocation and skill order (Warrior pure STR, Paladin STR + CON, Assassin 2 AGI / 1 STR) onto the stats page and the class entity records.
+- Files changed: `src/data/pages-generated/generated-pages.ts`, `src/data/pages-generated/generated-faqs.ts`, `src/data/entities.ts`, `CONTENT_INDEX.md`.
+- URLs affected: `/achievements`, `/walkthrough`, `/stats`, `/classes/warrior`, `/classes/paladin`, `/classes/assassin`.
+- Content changed: Achievements page now publishes a 44-row data-table sourced from the Steam Community global stats page (AppID 4538960), with a missable block covering the two ending achievements plus the three completionist achievements, and a Steam-only Achievement Point Network Store reward-loop block. Walkthrough page now lists Chapter 1 Ayles (deliver stone chair to Mr. Brown, cut the Cori Tree, travel east to Adonis Town), the Chapter 2 Adonis Forest faction choice as a save-before-this gate, Chapter 3 Five Holy Seals (Laka Ruins / Pale, Vicious-Vague route split, Frosty Dungeon / Frost Guardian, Lava Cave / Fire Demon, Akun Temple Altar / hidden switches), Chapter 4 Leo Kingdom (Osiris, Pardon = Wolfred Dupre, Sun = adoptive half-sister), and Chapter 5 Ladon's Stronghold (Phase 1 red ground indicators, Phase 2 arena energy waves, Good ending Charity sacrifice, Evil ending Regret embraces Chaos, then Hard / Hell Mode and New Game+). Stats page now publishes three per-class data-tables with named SP skill orders, reported level-90 / level-67 / level-38 spreads, and a callout on the three beginner traps (no even stat spread, focus 2-3 usable skills, SPI weaker than expected). Class entity records gained `primary_stats`, `weapon_affinity`, `armor_affinity`, `active_skills`, `passive_skills`, `stat_allocation_notes`, `gear_focus`, and `difficulty_for_new_players` populated from the public first-week guides. FAQ answers updated to match the new content.
+- Verification: `npm run typecheck`, `npm run lint`, `npm run validate:template`, `npm run validate:content`, `npm run validate:indexnow`, `npm run build`, `npm run validate:rendered-seo` will run as part of the publish batch.
+
 ### 2026-09-06 - Adsterra fixed six-unit ad codes wired
 
 - Task: Replace empty Adsterra placeholders in `src/data/ads.ts` with the fixed six-unit codes created for `zenonia1.pro` (Native Banner, 728x90, 468x60, 320x50, 160x600, Smartlink).
