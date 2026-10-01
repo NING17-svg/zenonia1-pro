@@ -65,3 +65,9 @@ A growth-relevant task is not complete until `GROWTH_LOG.md` is updated.
 - `AGENTS.md`: stable project and growth rules.
 - `CONTENT_INDEX.md`: page inventory and page-level SEO/GEO/conversion map.
 - `GROWTH_LOG.md`: chronological growth-relevant change log.
+
+## Shared guide Worker deployment
+
+User-authorized on 2026-10-01: this site's production domain zenonia1.pro is served by Worker `onimushawayofthesword-pro` in `guide-pool-04`, at most 10 guide sites per Worker. `.shared-worker.json` is the authoritative deployment mapping; the deployment repository is `NING17-svg/game-guide-pool-04`. This deployment exception overrides older instructions that infer an independent Worker from this source repository or require assets-only for the shared deployment entry. Retain this source site's own build configuration and functionality.
+
+Keep content, canonical URLs, sitemap, analytics and ad identity in this source repository. A main-branch push runs `.github/workflows/shared-worker.yml` and calls the configured secret Cloudflare deploy hook; Cloudflare builds and publishes the group's source HEADs. Do not run this source repository's wrangler deploy or recreate its previous independent Worker. After push, run the central `cloudflare_push_verify.py --repo-root <this source checkout>`; it resolves this mapping and requires source SHA, successful group build, 100% active version and live domain marker to agree. Source SHA and deployment repository SHA are different identities.

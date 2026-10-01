@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "site_id": "zenonia1-pro",
+  "worker": "onimushawayofthesword-pro",
+  "domain": "zenonia1.pro",
+  "repository": "NING17-svg/zenonia1-pro",
+  "deployment_repository": "NING17-svg/game-guide-pool-04",
+  "marker_path": "/__deployment.json",
+  "pool_id": "guide-pool-04"
+}

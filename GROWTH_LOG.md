@@ -48,3 +48,7 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 - Content changed: Neutral placeholder content only.
 - Ad baseline: Fixed Adsterra-ready modules are present and disabled; no ad markup or request is emitted.
 - Follow-up: Replace this entry with a real launch/configuration entry when the one-click builder fills the site for a specific game.
+
+## 2026-10-01 — shared Worker deployment maintenance
+
+User-authorized routing migration to `guide-pool-04` / Worker `onimushawayofthesword-pro`; source push is connected to the shared Cloudflare Git build via the repository deploy hook. Content and public URL identities are unchanged. Completion is tracked by the central group migration report and live source/version verification.
